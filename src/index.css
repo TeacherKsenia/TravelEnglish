@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0c29 0%, #1a1a2e 50%, #16213e 100%);
+  font-family: 'Inter', sans-serif;
+  color: #eef2ff;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 2rem;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: linear-gradient(105deg, #7c3aed, #0891b2);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 60px;
+  color: white;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #a855f7, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.program-item {
+  background: rgba(10, 20, 35, 0.6);
+  border-radius: 1rem;
+  padding: 1rem;
+  border-left: 3px solid #a855f7;
+}
+
+.price-card {
+  background: rgba(124, 58, 237, 0.15);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #c084fc;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
